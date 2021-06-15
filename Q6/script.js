@@ -8,6 +8,5 @@ function clickButton() {
     }
 }
 
-// TODO: セキュリティを考慮するとjs側でonclickイベントを割り当てたほうがいいかも？
-// var button = document.getElementById('displayBtn');
-// button.onclick = clickButton;
+var button = document.getElementById('displayBtn');
+button.onclick = clickButton;
