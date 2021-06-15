@@ -6,5 +6,14 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <p id="currentTime">
+    <script>
+      var date = new Date(Date.now());
+      var time = ('0' + date.getHours()).slice(-2)
+      + ':' + ('0' + date.getMinutes()).slice(-2)
+      + ':' + ('0' + date.getSeconds()).slice(-2)
+      document.getElementById("currentTime").innerHTML = time;
+    </script>
+  </p>
 </body>
 </html>
