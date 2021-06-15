@@ -3,3 +3,6 @@ function selectOption() {
 
     document.getElementById('selected').textContent = selectBox.value;
 }
+
+var selectBox = document.getElementById('selectBox');
+selectBox.onchange = selectOption;
