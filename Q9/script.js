@@ -5,4 +5,4 @@ function selectOption() {
 }
 
 var selectBox = document.getElementById('selectBox');
-selectBox.onchange = selectOption;
+selectBox.addEventListener('change', selectOption);
