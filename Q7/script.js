@@ -5,7 +5,7 @@ function clickButton() {
 }
 
 var button = document.getElementById('displayBtn');
-button.onclick = clickButton;
+button.addEventListener('click', clickButton);
 
 function checkCharacterLength() {
     if (inputField.value.length >= 10) {
@@ -15,4 +15,4 @@ function checkCharacterLength() {
     }
 }
 
-inputField.onkeyup = checkCharacterLength;
+inputField.addEventListener('keyup', checkCharacterLength);
