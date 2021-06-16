@@ -4,4 +4,4 @@ function clickButton() {
 }
 
 var button = document.getElementById('changeBtn');
-button.onclick = clickButton;
+button.addEventListener('click', clickButton);
